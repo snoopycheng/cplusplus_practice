@@ -9,7 +9,7 @@ int main(){
     cout << "input a string:\n";
     getline(cin, s);
 
-    unsigned int i, count = 0, pos = 0;
+    size_t i, count = 0, pos = 0;
 
     while((i = s.find_first_of(target, pos)) != string::npos){
         count++;
@@ -19,6 +19,7 @@ int main(){
     if(count == 0){
         cout << "no integers!" << endl;
     }
+
     else{
         cout << count << " integers" << endl;
     }
